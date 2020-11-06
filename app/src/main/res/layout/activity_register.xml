@@ -7,48 +7,62 @@
     tools:context=".register_activity">
 
     <EditText
-        android:id="@+id/id_regist_text"
-        android:layout_width="396dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:hint="id_text"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="10dp" />
-
-    <EditText
-        android:id="@+id/password_register_text"
-        android:layout_width="385dp"
-        android:layout_height="49dp"
+        android:id="@+id/password__text"
+        android:layout_width="400dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="51dp" />
+        app:layout_constraintBottom_toTopOf="@+id/name__text"
+        app:layout_constraintTop_toBottomOf="@+id/id__text"
+        tools:layout_editor_absoluteX="13dp" />
 
     <EditText
-        android:id="@+id/name_register_text"
+        android:id="@+id/id__text"
+        android:layout_width="400dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="id_text"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/password__text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/name__text"
         android:layout_width="400dp"
         android:layout_height="56dp"
         android:ems="10"
         android:hint="name"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteY="95dp" />
+        app:layout_constraintBottom_toTopOf="@+id/age__text"
+        app:layout_constraintTop_toBottomOf="@+id/password__text"
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/age_register_text"
-        android:layout_width="403dp"
-        android:layout_height="47dp"
+        android:id="@+id/age__text"
+        android:layout_width="400dp"
+        android:layout_height="56dp"
         android:ems="10"
         android:hint="age"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintBottom_toTopOf="@+id/register__button2"
+        app:layout_constraintTop_toBottomOf="@+id/name__text"
+        tools:layout_editor_absoluteX="4dp" />
 
     <Button
-        android:id="@+id/register_register_button"
+        android:id="@+id/register__button2"
         android:layout_width="384dp"
         android:layout_height="57dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="300dp"
         android:text="회원가입"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age__text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
