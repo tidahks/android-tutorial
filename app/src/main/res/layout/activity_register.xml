@@ -46,12 +46,12 @@
         android:ems="10"
         android:hint="age"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/register__button2"
+        app:layout_constraintBottom_toTopOf="@+id/register__button"
         app:layout_constraintTop_toBottomOf="@+id/name__text"
         tools:layout_editor_absoluteX="4dp" />
 
     <Button
-        android:id="@+id/register__button2"
+        android:id="@+id/register__button"
         android:layout_width="384dp"
         android:layout_height="57dp"
         android:layout_marginStart="7dp"

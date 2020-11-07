@@ -12,8 +12,8 @@ public class Main_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        EditText id_register_text=(EditText) findViewById(R.id.id__text);
-        EditText id_register_password=(EditText) findViewById(R.id.password__text);
-        TextView welcome_textview=(TextView) findViewById(R.id._textview2);
+        EditText id__text=(EditText) findViewById(R.id.id__text);
+        EditText password__text=(EditText) findViewById(R.id.password__text);
+        TextView _textview2=(TextView) findViewById(R.id._textview2);
     }
 }

@@ -16,9 +16,9 @@ public class login_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 //레이아웃에있는것 가져오기
-        EditText id_register_text=(EditText) findViewById(R.id.id__text);
-        EditText id_register_password=(EditText) findViewById(R.id.password__text);
-        Button login__button=(Button) findViewById(R.id.login__button);
+        EditText id__text=(EditText) findViewById(R.id.id__text);
+        EditText password__text=(EditText) findViewById(R.id.password__text);
+        Button  login__button=(Button) findViewById(R.id.login__button);
         TextView register__button=(TextView)findViewById(R.id.register__button);
                                                 //매개변수 공부
         register__button.setOnClickListener(new View.OnClickListener(){
